@@ -15,6 +15,7 @@ const NavbarForSmallDevice = () => {
                     height={120}
                     quality={100}
                     loading='lazy'
+                    alt="logo"
                 ></Image>
                 <h1 className=' font-bold'>IPO Money</h1>
             </div>

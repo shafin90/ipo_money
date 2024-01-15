@@ -19,6 +19,7 @@ export default function Home() {
             height={120}
             quality={100}
             loading='lazy'
+            alt=""
           ></Image>
           <h1 className='text-center font-semibold'>IPO Money</h1>
         </div>

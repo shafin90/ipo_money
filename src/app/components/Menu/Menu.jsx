@@ -4,80 +4,82 @@ import './Menu.css'
 
 const Menu = () => {
     return (
-        <div  className='w-full overflow-y-scroll h-full  '>
+        <div className="w-full overflow-y-scroll h-full">
 
             {/* Menu================ */}
             <ul>
                 {/* Home */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9' ><Link href="">Home</Link></li>
+                    className="bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9" ><Link href="/">Home</Link></li>
 
                 {/* Main IPO */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">Main IPO</Link></li>
+                    className="bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">Main IPO</Link></li>
 
                 {/* SME IPO */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">SME IPO</Link></li>
+                    className=" bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">SME IPO</Link></li>
 
                 {/* IPO Allotment */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">IPO Allotment
+                    className=" bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">IPO Allotment
                     </Link></li>
 
                 {/* IPO Listing */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">IPO Listing</Link></li>
+                    className=" bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">IPO Listing</Link></li>
 
+                {/* Experts Review */}
                 {/* Experts Review */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">Expert's Review</Link></li>
+                    className="bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">Experts Review</Link></li>
+
 
                 {/* Upcoming IPO */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">Upcoming IPO
+                    className=" bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">Upcoming IPO
                     </Link></li>
 
                 {/* Careers */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">Careers</Link></li>
+                    className=" bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">Careers</Link></li>
 
 
                 {/* Contact us */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">Contact us</Link></li>
+                    className=" bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">Contact us</Link></li>
 
 
                 {/* About us */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">About us
+                    className=" bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">About us
                     </Link></li>
 
 
                 {/* Disclaimer */}
                 <li
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
-                    className=' bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9'
-                ><Link href="">Disclaimer
+                    className=" bg-blue-50 ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-green-100 hover:ps-9"
+                ><Link href="/">Disclaimer
                     </Link></li>
             </ul>
 
