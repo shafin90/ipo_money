@@ -1,0 +1,22 @@
+/* Menu.css */
+
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+    background: lightblue
+  }
+   */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightblue;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
