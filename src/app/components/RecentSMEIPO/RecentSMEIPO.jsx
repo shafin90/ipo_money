@@ -1,55 +1,93 @@
 'use client'
-import { motion } from "framer-motion";
-import './RecentSMEIPO.css'
+import React, { useEffect, useRef } from 'react';
+import RecentIPOCard from '../RecentIPOCard/RecentIPOCard';
+import gsap from 'gsap';
+import ScrollTrigger from 'gsap/ScrollTrigger';
+import './RecentSMEIPo.css'
 
-const cardVariants = {
-  offscreen: {
-    y: 300
-  },
-  onscreen: {
-    y: 50,
-    rotate: -10,
-    transition: {
-      type: "spring",
-      bounce: 0.4,
-      duration: 0.3
-    }
-  }
-};
+const RecentSMEIPo = () => {
+    const sectionRef = useRef(null);
+    const triggerRef = useRef(null);
 
-const hue = (h) => `hsl(${h}, 100%, 50%)`;
+    gsap.registerPlugin(ScrollTrigger);
 
-function Card({ emoji, hueA, hueB }) {
-//   const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
+    useEffect(() => {
+        const pin = gsap.fromTo(
+            sectionRef.current,
+            {
+                translateX: "-300vw",
+            },
+            {
+                translateX: 0,
+                ease: "none",
+                duration: 1,
+                scrollTrigger: {
+                    trigger: triggerRef.current,
+                    start: "top top",
+                    end: "2000 top",
+                    scrub: 0.6,
+                    pin: true,
+                },
+            }
+        );
+        return () => {
+            {/* A return function for killing the animation on component unmount */ }
+            pin.kill();
+        };
+    }, []);
 
-  return (
-    <motion.div
-      className="card-container"
-      initial="offscreen"
-      whileInView="onscreen"
-    //   viewport={{ once: true, amount: 0.8 }}
-    >
-      {/* <div className="splash" style={{ background }} /> */}
-      <motion.div className="card" variants={cardVariants}>
-        {emoji}
-      </motion.div>
-    </motion.div>
-  );
+    return (
+      <section className="scroll-section-outer">
+            {/* <h1 className=' text-center font-semibold text-2xl'>Recent Main IPOs</h1> */}
+            {/* The section up act just as a wrapper. If the trigger (below) is the
+      first jsx element in the component, you get an error on route change */}
+
+            {/* The div below act just as a trigger. As the doc suggests, the trigger and 
+      the animation should alway be two separated refs */}
+            <div ref={triggerRef}>
+                <div  ref={sectionRef} className="scroll-section-inner">
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                    <div className="scroll-section">
+                        <RecentIPOCard></RecentIPOCard>
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
 }
 
-const food= [
-  ["Sample", 340, 10],
-  ["Sample", 20, 40],
-  ["Sample", 60, 90],
-  ["Sample", 80, 120],
-  ["Sample", 100, 140],
-  ["Sample", 205, 245],
-  ["Sample", 260, 290],
-  ["Sample", 290, 320]
-];
 
-export default function RecentSMEIPO() {
-  return food.map(([emoji, hueA, hueB]) => (
-    <Card emoji={emoji} hueA={hueA} hueB={hueB} key={emoji} />
-  ));
-}
+
+export default RecentSMEIPo;

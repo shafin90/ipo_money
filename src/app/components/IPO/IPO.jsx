@@ -4,15 +4,18 @@ import RecentIPOCard from '../RecentIPOCard/RecentIPOCard';
 import OngoinIPOSubscriptionTable from '../OngoinIPOSubscriptionTable/OngoinIPOSubscriptionTable';
 import Heading from '../Heading/Heading';
 import RecentMainIPo from '../RecentMainIPo/RecentMainIPo';
-import RecentSMEIPO from '../RecentSMEIPO/RecentSMEIPO';
 import RecentlyClosedIPO from '../RecentlyClosedIPO/RecentlyClosedIPO';
 import GMP from '../GMP/GMP';
+import RecentSMEIPo from '../RecentSMEIPo/RecentSMEIPo';
 
 const IPO = () => {
     return (
         <div className='w-full my-32'>
 
-            {/* Heading=========== */}
+            {/* 1. Ongoing SME IPO and Ongoing Main IPO secton============================================ */}
+
+            {/*a. For large screen========================================================== */}
+            {/* Heading */}
             <div className="flex justify-around items-center mb-8">
                 <h1 className='text-3xl text-gray-600 font-semibold hidden sm:block'>Ongoing Main IPO</h1>
                 <h1 className='text-3xl text-gray-600 font-semibold hidden sm:block'>Ongoing SME IPO</h1>
@@ -26,7 +29,7 @@ const IPO = () => {
                 <Card></Card>
             </div>
 
-            {/* Card section for small screen===================== */}
+            {/*b. For small screen=========================================================== */}
             <div className=' w-11/12 mx-auto block sm:hidden'>
                 {/* Ongoing Main IPO */}
                 <h1 className=' text-3xl font-bold text-gray-600 mb-7'>Ongoing Main IPO</h1>
@@ -43,16 +46,15 @@ const IPO = () => {
                 </div>
             </div>
 
-            {/* Recent SME IPOs */}
+            {/*2. Recent Main IPOs==================================================================== */}
             <Heading heading="Recent Main IPOs"></Heading>
             <RecentMainIPo></RecentMainIPo>
 
-            {/* Recent SME IPOs */}
+            {/*3. Recent SME IPOs ====================================================================== */}
             <Heading heading="Recent SME IPOs"></Heading>
-            <div className=' my-40'></div>
-            <RecentSMEIPO></RecentSMEIPO>
+            <RecentSMEIPo></RecentSMEIPo>
 
-            {/* Ongoing IPO Subscription */}
+            {/*4. Ongoing IPO Subscription ==============================================================*/}
             <div className=' my-20 mx-auto w-11/12'>
 
                 {/* heading for table */}
@@ -69,16 +71,16 @@ const IPO = () => {
             </div>
 
 
-            {/* Recently closed IPO Subscription - Main IPO */}
+            {/*5. Recently closed IPO Subscription - Main IPO ================================*/}
             <RecentlyClosedIPO heading="Recently closed IPO Subscription - Main IPO"></RecentlyClosedIPO>
 
-            {/* Recently closed IPO Subscription - Main IPO */}
+            {/*6. Recently closed IPO Subscription - SME IPO================================== */}
             <RecentlyClosedIPO heading="Recently closed IPO Subscription - SME IPO"></RecentlyClosedIPO>
 
-            {/* Main IPO GMP====green */}
+            {/*7. Main IPO GMP====green ========================================================*/}
             <GMP heading="Main IPO GMP" ></GMP>
 
-            {/* Main IPO GMP====red */}
+            {/*8. SME IPO GMP==================================================================== */}
             <GMP heading="SME IPO GMP" ></GMP>
 
         </div>
