@@ -4,11 +4,12 @@ import { FaInstagram } from "react-icons/fa";
 import { BsTwitterX } from "react-icons/bs";
 import { CiYoutube } from "react-icons/ci";
 import { FaFacebookF } from "react-icons/fa";
+import './CustomNavbar.css'
 
 const CustomNavbar = () => {
 
     return (
-        <div className='customNavbar w-full flex justify-center items-center  sticky top-0 hover:bg-zinc-50 bg-white border-b transition-all h-24 z-50'>
+        <div className='customNavbar w-full flex justify-center items-center  sticky top-0  border-b transition-all h-24 z-50'>
 
             <div className=' w-11/12 flex justify-between items-center'>
                 {/* meun================= */}
