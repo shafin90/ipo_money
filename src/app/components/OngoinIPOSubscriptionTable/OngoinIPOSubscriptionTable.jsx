@@ -2,7 +2,7 @@ import React from 'react';
 
 const OngoinIPOSubscriptionTable = () => {
     return (
-        <div className=' group  border pb-12 w-full bg-slate-50 hover:shadow-2xl transition-all '>
+        <div className=' rounded-3xl overflow-hidden group  border pb-12 w-full bg-slate-50 hover:shadow-2xl transition-all '>
 
             {/* IPO Name */}
             <h1 className=' text-slate-600 text-center font-bold text-xl mb-5 bg-slate-200 p-8 '>IPO Name</h1>

@@ -3,7 +3,8 @@ import { FaCheckToSlot } from "react-icons/fa6";
 
 const Card = () => {
     return (
-        <div className='w-full h-96 border bg-slate-50 transition-all hover:shadow-2xl relative z-10 '>
+        <div className='w-full rounded-3xl overflow-hidden h-96 border bg-slate-50 transition-all hover:shadow-2xl relative z-10 
+        '>
 
             {/* Date and IPO name=== */}
             <h1 className=' p-8 text-slate-600 font-bold bg-blue-50 flex justify-between items-end'>
