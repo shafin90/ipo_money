@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from 'react';
 import RecentIPOCard from '../RecentIPOCard/RecentIPOCard';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import './RecentSMEIPo.css'
+import './RecentSMEIPO.css'
 
 const RecentSMEIPO = () => {
     const sectionRef = useRef(null);
