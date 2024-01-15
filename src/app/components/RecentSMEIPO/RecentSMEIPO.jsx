@@ -5,7 +5,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import './RecentSMEIPo.css'
 
-const RecentSMEIPo = () => {
+const RecentSMEIPO = () => {
     const sectionRef = useRef(null);
     const triggerRef = useRef(null);
 
@@ -90,4 +90,4 @@ const RecentSMEIPo = () => {
 
 
 
-export default RecentSMEIPo;
+export default RecentSMEIPO;

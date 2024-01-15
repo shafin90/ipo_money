@@ -5,7 +5,7 @@ import Heading from '../Heading/Heading';
 import RecentMainIPo from '../RecentMainIPo/RecentMainIPo';
 import RecentlyClosedIPO from '../RecentlyClosedIPO/RecentlyClosedIPO';
 import GMP from '../GMP/GMP';
-import RecentSMEIPo from '../RecentSMEIPo/RecentSMEIPo';
+import RecentSMEIPO from '../RecentSMEIPO/RecentSMEIPO';
 
 
 const IPO = () => {
@@ -52,7 +52,7 @@ const IPO = () => {
 
             {/*3. Recent SME IPOs ====================================================================== */}
             <Heading heading="Recent SME IPOs"></Heading>
-            <RecentSMEIPo></RecentSMEIPo>
+            <RecentSMEIPO></RecentSMEIPO>
 
             {/*4. Ongoing IPO Subscription ==============================================================*/}
             <div className=' my-20 mx-auto w-11/12'>
