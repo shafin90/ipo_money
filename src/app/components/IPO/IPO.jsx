@@ -1,12 +1,12 @@
 import React from 'react';
 import Card from '../Card/Card';
-import RecentIPOCard from '../RecentIPOCard/RecentIPOCard';
 import OngoinIPOSubscriptionTable from '../OngoinIPOSubscriptionTable/OngoinIPOSubscriptionTable';
 import Heading from '../Heading/Heading';
 import RecentMainIPo from '../RecentMainIPo/RecentMainIPo';
 import RecentlyClosedIPO from '../RecentlyClosedIPO/RecentlyClosedIPO';
 import GMP from '../GMP/GMP';
 import RecentSMEIPo from '../RecentSMEIPo/RecentSMEIPo';
+
 
 const IPO = () => {
     return (
