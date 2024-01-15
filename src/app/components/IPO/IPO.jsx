@@ -27,7 +27,7 @@ const IPO = () => {
             </div>
 
             {/* Card section for small screen===================== */}
-            <div className=' w-full block sm:hidden'>
+            <div className=' w-11/12 mx-auto block sm:hidden'>
                 {/* Ongoing Main IPO */}
                 <h1 className=' text-3xl font-bold text-gray-600 mb-7'>Ongoing Main IPO</h1>
                 <div className=' grid grid-rows-2 grid-cols-1 gap-10'>
