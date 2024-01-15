@@ -10,9 +10,9 @@ export default function Home() {
     <div className=' flex justify-between items-start ' >
 
       {/* Menu= left part of the screen========================================================= */}
-      <div className='side_menu w-3/12 h-screen sticky top-0 z-50'>
+      <div className='side_menu w-3/12 h-screen sticky top-0 z-50 bg-white'>
         {/* logo =============*/}
-        <div className='flex flex-col justify-center items-center h-2/6 bg-blue-50'>
+        <div className='flex flex-col justify-center items-center h-2/6 border-r'>
           <Image
             src={logo}
             width={120}
@@ -25,7 +25,7 @@ export default function Home() {
         </div>
 
         {/* menu========== */}
-        <div className=' h-4/6 bg-blue-50'>
+        <div className=' h-4/6 '>
           <Menu></Menu>
         </div>
       </div>
