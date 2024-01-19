@@ -1,15 +1,21 @@
+'use client'
 import Link from 'next/link';
 import React from 'react';
 import './Menu.css'
+import { useRouter } from 'next/navigation';
+
 
 const Menu = () => {
+
+    const router = useRouter();
+
     return (
         <div className="w-full overflow-y-scroll h-full">
 
             {/* Menu================ */}
             <ul>
                 {/* Home */}
-                <li
+                <li onClick={() => router.push("/")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9" ><Link href="/">Home</Link></li>
 
@@ -21,9 +27,10 @@ const Menu = () => {
 
                 {/* SME IPO */}
                 <li
+                    onClick={() => router.push("#smeipo")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
-                ><Link href="/">SME IPO</Link></li>
+                ><Link href="#smeipo">SME IPO</Link></li>
 
                 {/* IPO Allotment */}
                 <li

@@ -1,3 +1,7 @@
+// Page has two section. 
+// 1. Menu : it takes place at the left side of the screen
+// 2. IPO : It takes place at the right side of the screen
+
 import Menu from './components/Menu/Menu'
 import IPO from './components/IPO/IPO'
 import Image from 'next/image'
@@ -9,7 +13,7 @@ export default function Home() {
   return (
     <div className=' flex justify-between items-start ' >
 
-      {/* Menu= left part of the screen========================================================= */}
+      {/* Menu : left part of the screen===================================================== */}
       <div className='side_menu w-3/12 h-screen sticky top-0 z-50 bg-white'>
         {/* logo =============*/}
         <div className='flex flex-col justify-center items-center h-2/6 border-r'>
@@ -30,7 +34,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/*IPO details= right part of the screen =============================================== */}
+      {/* IPO details : right part of the screen ============================================ */}
       <div className='lg:w-9/12 w-full'>
 
         {/* navigation component for small device */}
