@@ -189,7 +189,7 @@ const IPOListing = ({ data }) => {
                 </thead>
                 <tbody>
                     {filteredData.map((item, index) => (
-                        <tr key={index}>
+                        <tr key={index} className=' hover:bg-gray-100 transition-all'>
                             <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600'>{item.company_name}</td>
                             <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600'>{item.ipo_listing_date}</td>
                             <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600'>{item.ipo_type}</td>
