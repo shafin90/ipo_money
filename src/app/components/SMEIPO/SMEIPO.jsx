@@ -61,8 +61,8 @@ const SMEIPO = ({ data }) => {
             <h1 className='text-center font-extrabold text-5xl text-slate-700 mb-14'>SME IPO</h1>
 
             <div className=' mb-3'>
-                <label>
-                    Exchange Filter:
+                <label className=' font-semibold text-slate-700'>
+                    PLatform:
                     <select
                         value={exchangeFilter}
                         onChange={(e) => setExchangeFilter(e.target.value)}
@@ -75,8 +75,8 @@ const SMEIPO = ({ data }) => {
             </div>
 
             <div className=' mb-3'>
-                <label>
-                    Sort Order:
+                <label className=' font-semibold text-slate-700'>
+                    Sort based on price:
                     <select
                         value={sortOrder}
                         onChange={(e) => setSortOrder(e.target.value)}
@@ -88,8 +88,8 @@ const SMEIPO = ({ data }) => {
             </div>
 
             <div >
-                <label>
-                    Date Range Filter:
+                <label className=' font-semibold text-slate-700'>
+                    Date Range:
                     <Datetime
                         value={startDate}
                         onChange={(date) => setStartDate(date)}
@@ -103,32 +103,33 @@ const SMEIPO = ({ data }) => {
                 </label>
             </div>
 
-           
 
 
-            <table className='w-full  mt-10 border'>
-                <thead className=' bg-blue-50'>
-                    <tr>
-                        <th className='text-start p-7 text-xl text-slate-600'>Company Name</th>
-                        <th className='text-start p-7 text-xl text-slate-600'>Dates</th>
-                        <th className='text-start p-7 text-xl text-slate-600'>Price</th>
-                        <th className='text-start p-7 text-xl text-slate-600'>Platform</th>
-                    </tr>
-                </thead>
-
-
-                <tbody>
-                    {filteredAndSortedData.map((item, index) => (
-                        <tr key={index}>
-                            <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10'>{item.company_name}</td>
-                            <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600'>{item.dates}</td>
-                            <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600'>{item.price}</td>
-                            <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600'>{item.platform}</td>
+                <table className='w-full  mt-10 border'>
+                    <thead className=' bg-blue-50'>
+                        <tr>
+                            <th className='text-start p-7 text-xl text-slate-600'>Company Name</th>
+                            <th className='text-start p-7 text-xl text-slate-600'>Dates</th>
+                            <th className='text-start p-7 text-xl text-slate-600'>Price</th>
+                            <th className='text-start p-7 text-xl text-slate-600'>Platform</th>
                         </tr>
-                    ))}
-                </tbody>
+                    </thead>
 
-            </table>
+
+                    <tbody >
+                        {filteredAndSortedData.map((item, index) => (
+
+                            <tr key={index}>
+                                <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10'>{item.company_name}</td>
+                                <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600'>{item.dates}</td>
+                                <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600'>{item.price}</td>
+                                <td className='px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600'>{item.platform}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+
+                </table>
+            
 
         </div>
     );

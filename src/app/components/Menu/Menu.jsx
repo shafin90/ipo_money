@@ -40,10 +40,10 @@ const Menu = () => {
                     </Link></li>
 
                 {/* IPO Listing */}
-                <li
+                <li onClick={()=>router.push("#ipo-listing")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
-                ><Link href="/">IPO Listing</Link></li>
+                ><Link href="#ipo-listing">IPO Listing</Link></li>
 
                 {/* Experts Review */}
                 {/* Experts Review */}
