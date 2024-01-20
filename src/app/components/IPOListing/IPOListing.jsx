@@ -9,6 +9,11 @@ const IPOListing = ({ data }) => {
 
     // State for date filter
     const [dateFilter, setDateFilter] = useState('');
+    const question1 = useRef(null)
+    const question2 = useRef(null)
+    const question3 = useRef(null)
+    const question4 = useRef(null)
+    const question5 = useRef(null)
 
     if (!Array.isArray(data)) {
         // Handle the case where data is not an array
@@ -33,14 +38,6 @@ const IPOListing = ({ data }) => {
     const filteredData = data
         .filter(filterDataByIpoType)
         .filter(filterDataByDate);
-
-
-
-    const question1 = useRef(null)
-    const question2 = useRef(null)
-    const question3 = useRef(null)
-    const question4 = useRef(null)
-    const question5 = useRef(null)
 
 
     return (
