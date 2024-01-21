@@ -103,9 +103,11 @@ const SMEIPO = ({ data }) => {
                 </label>
             </div>
 
+ 
+          {/* this view for lg and md device */}
 
-
-                <table className='w-full  mt-10 border'>
+              <div className='lg:flex md:flex hidden'>
+              <table className='w-full  mt-10 border'>
                     <thead className=' bg-blue-50'>
                         <tr>
                             <th className='text-start p-7 text-xl text-slate-600'>Company Name</th>
@@ -129,7 +131,33 @@ const SMEIPO = ({ data }) => {
                     </tbody>
 
                 </table>
+              </div>
+
+              {/* this view for sm == small || mobile device */}
+        <div>
             
+        <div className=' mb-20 lg:hidden md:hidden mt-10'>
+               
+
+                {/* grid */}
+                <div className='grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-3'>
+
+                {filteredAndSortedData.map((item, index) => (
+                            <div key={index} className='border bg-slate-50 hover:bg-slate-100 h-40 p-6'>
+                                <h1 className='font-bold text-lg text-slate-600'>{item.company_name}</h1>
+                                {/* Add additional information based on your needs */}
+                                <p>{item.dates}</p>
+                                <p>{item.price}</p>
+                                <p>{item.platform}</p>
+                            </div>
+                        ))}
+
+                   
+
+                </div>
+
+            </div>
+        </div>           
 
         </div>
     );

@@ -176,7 +176,8 @@ const IPOListing = ({ data }) => {
                 </div>
             </div>
             {/* Table to display data */}
-            <table className="w-full shadow-lg hover:shadow-2xl transition-all">
+          <div className='lg:flex md:flex hidden'>
+          <table className="w-full shadow-lg hover:shadow-2xl transition-all">
                 <thead className=' bg-blue-50'>
                     <tr>
                         <th className='text-start p-7 text-xl text-slate-600'>Company Name</th>
@@ -194,6 +195,26 @@ const IPOListing = ({ data }) => {
                     ))}
                 </tbody>
             </table>
+          </div>
+
+          {/* this table for sm device == mobile / small device */}
+          <div>
+          <div className='grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-3'>
+
+{filteredData.map((item, index) => (
+            <div key={index} className='border bg-slate-50 hover:bg-slate-100 h-40 p-6'>
+                <h1 className='font-bold text-lg text-slate-600'>{item.company_name}</h1>
+                {/* Add additional information based on your needs */}
+                <p>{item.ipo_listing_date}</p>
+                <p>{item.ipo_type}</p>
+              
+            </div>
+        ))}
+
+   
+
+</div>
+          </div>
         </div>
     );
 };
