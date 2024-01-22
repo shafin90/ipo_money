@@ -21,9 +21,10 @@ const Menu = () => {
 
                 {/* Main IPO */}
                 <li
+                onClick={() => router.push("#mainipos")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
-                ><Link href="/">Main IPO</Link></li>
+                ><Link href="#mainipos">Main IPO</Link></li>
 
                 {/* SME IPO */}
                 <li

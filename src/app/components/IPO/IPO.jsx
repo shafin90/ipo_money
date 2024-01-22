@@ -8,6 +8,7 @@ import GMP from '../GMP/GMP';
 import RecentSMEIPO from '../RecentSMEIPO/RecentSMEIPO';
 import SMEIPO from '../SMEIPO/SMEIPO';
 import IPOListing from '../IPOListing/IPOListing';
+import MainIPO from '../MainIPO/MainIPO';
 
 
 const IPO = () => {
@@ -379,7 +380,8 @@ const IPO = () => {
 
       {/*8. SME IPO GMP==================================================================== */}
       <GMP heading="SME IPO GMP" ></GMP>
-
+       {/* TODO: make this dynamic */}
+       <MainIPO></MainIPO>
       {/* 9. SME IPO component. when user click on sme ipo from side menu user will get redirected to this component */}
       <SMEIPO data={dataOfSMEIPO}></SMEIPO>
 
