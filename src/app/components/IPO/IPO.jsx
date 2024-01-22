@@ -9,6 +9,8 @@ import RecentSMEIPO from '../RecentSMEIPO/RecentSMEIPO';
 import SMEIPO from '../SMEIPO/SMEIPO';
 import IPOListing from '../IPOListing/IPOListing';
 import MainIPO from '../MainIPO/MainIPO';
+import IPOAllotment from '../IPOAllotment/IPOAllotment';
+
 
 
 const IPO = () => {
@@ -384,7 +386,8 @@ const IPO = () => {
        <MainIPO></MainIPO>
       {/* 9. SME IPO component. when user click on sme ipo from side menu user will get redirected to this component */}
       <SMEIPO data={dataOfSMEIPO}></SMEIPO>
-
+ {/* TODO: The ipo allotment is dynamic */}
+ <IPOAllotment></IPOAllotment>
       {/* 10. IPO listing component. when user click on sme ipo from side menu user will get redirected to this component */}
       <IPOListing data={dataIPOListing}></IPOListing>
     </div>

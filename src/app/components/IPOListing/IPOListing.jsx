@@ -198,7 +198,7 @@ const IPOListing = ({ data }) => {
           </div>
 
           {/* this table for sm device == mobile / small device */}
-          <div>
+          <div className='lg:hidden md:hidden flex'>
           <div className='grid grid-cols-1 sm:grid-rows-1 sm:grid-cols-3'>
 
 {filteredData.map((item, index) => (

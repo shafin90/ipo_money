@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 const Menu = () => {
 
     const router = useRouter();
-
+ 
     return (
         <div className="w-full overflow-y-scroll h-full">
 
@@ -32,13 +32,14 @@ const Menu = () => {
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
                 ><Link href="#smeipo">SME IPO</Link></li>
+             
 
                 {/* IPO Allotment */}
-                <li
+               <li
+                    onClick={() => router.push("#ipo-allotment")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
-                ><Link href="/">IPO Allotment
-                    </Link></li>
+                ><Link href="#ipo-allotment">IPO Allotment</Link></li>
 
                 {/* IPO Listing */}
                 <li onClick={()=>router.push("#ipo-listing")}
