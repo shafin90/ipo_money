@@ -11,6 +11,7 @@ import IPOListing from '../IPOListing/IPOListing';
 import MainIPO from '../MainIPO/MainIPO';
 import IPOAllotment from '../IPOAllotment/IPOAllotment';
 import UpcomingIPO from '../UpcomingIPO/UpcomingIPO';
+import ExpertsReview from '../ExpertsReview/ExpertsReview';
 
 
 
@@ -391,6 +392,8 @@ const IPO = () => {
  <IPOAllotment></IPOAllotment>
       {/* 10. IPO listing component. when user click on sme ipo from side menu user will get redirected to this component */}
       <IPOListing data={dataIPOListing}></IPOListing>
+      {/* TODO:Create This to dynamic  */}
+      <ExpertsReview></ExpertsReview>
        {/* TODO: The upcoming ipo is dynamic */}
       <UpcomingIPO></UpcomingIPO>
     </div>

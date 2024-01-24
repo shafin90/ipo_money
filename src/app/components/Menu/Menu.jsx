@@ -50,9 +50,10 @@ const Menu = () => {
                 {/* Experts Review */}
                 {/* Experts Review */}
                 <li
+                onClick={() => router.push("#experts-review")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
-                ><Link href="/">Experts Review</Link></li>
+                ><Link href="#experts-review">Experts Review</Link></li>
 
 
                 {/* Upcoming IPO */}
