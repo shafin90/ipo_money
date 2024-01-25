@@ -17,7 +17,11 @@ import AboutUs from '../AboutUs/AboutUs';
 import Disclaimer from '../Disclaimer/Disclaimer';
 =======
 import ContactUs from '../ContactUs/ContactUs';
+<<<<<<< HEAD
 >>>>>>> ffaa9139ce636f99b7409247a357ef704c46bcde
+=======
+import Careers from '../Careers/Careers';
+>>>>>>> ddbcd4a23d5ddd48969a27bce521033958903a45
 
 
 
@@ -402,6 +406,8 @@ const IPO = () => {
       <ExpertsReview></ExpertsReview>
       {/* TODO: The upcoming ipo is dynamic */}
       <UpcomingIPO></UpcomingIPO>
+      {/* TODO: create this to real */}
+      <Careers></Careers>
       {/* TODO: Create This To Real */}
       <ContactUs></ContactUs>
       {/* TODO: Create this to Real INFO */}
