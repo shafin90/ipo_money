@@ -7,7 +7,7 @@ import { FaFacebookF, FaInstagram, FaPhone } from "react-icons/fa6";
 const ContactUs = () => {
     return (
         <div id="contact-us" className='w-11/12 mx-auto mt-28 '>
-             <h1 className='text-center font-extrabold text-5xl text-slate-700 mb-16'>Contact US</h1>
+             <h1 className='text-center font-extrabold text-5xl text-slate-600 mb-16'>Contact US</h1>
          
             <div className="hero bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10 rounded">
   <div className="hero-content flex-col lg:flex-row-reverse gap-x-36">
