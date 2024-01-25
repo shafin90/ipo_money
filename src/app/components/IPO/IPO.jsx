@@ -13,8 +13,10 @@ import IPOAllotment from '../IPOAllotment/IPOAllotment';
 import UpcomingIPO from '../UpcomingIPO/UpcomingIPO';
 import ExpertsReview from '../ExpertsReview/ExpertsReview';
 import AboutUs from '../AboutUs/AboutUs';
+import Disclaimer from '../Disclaimer/Disclaimer';
 import ContactUs from '../ContactUs/ContactUs';
 import Careers from '../Careers/Careers';
+
 
 
 
@@ -209,7 +211,7 @@ const IPO = () => {
     }
   ]
 
-  const dataIPOListing =[
+  const dataIPOListing = [
     {
       "company_name": "Shree Marutinandan Tubes",
       "ipo_listing_date": "IPO Listing Today",
@@ -311,7 +313,7 @@ const IPO = () => {
       "ipo_type": "Mainline"
     }
   ]
-  
+
 
 
   return (
@@ -387,17 +389,17 @@ const IPO = () => {
 
       {/*8. SME IPO GMP==================================================================== */}
       <GMP heading="SME IPO GMP" ></GMP>
-       {/* TODO: make this dynamic */}
-       <MainIPO></MainIPO>
+      {/* TODO: make this dynamic */}
+      <MainIPO></MainIPO>
       {/* 9. SME IPO component. when user click on sme ipo from side menu user will get redirected to this component */}
       <SMEIPO data={dataOfSMEIPO}></SMEIPO>
- {/* TODO: The ipo allotment is dynamic */}
- <IPOAllotment></IPOAllotment>
+      {/* TODO: The ipo allotment is dynamic */}
+      <IPOAllotment></IPOAllotment>
       {/* 10. IPO listing component. when user click on sme ipo from side menu user will get redirected to this component */}
       <IPOListing data={dataIPOListing}></IPOListing>
       {/* TODO:Create This to dynamic  */}
       <ExpertsReview></ExpertsReview>
-       {/* TODO: The upcoming ipo is dynamic */}
+      {/* TODO: The upcoming ipo is dynamic */}
       <UpcomingIPO></UpcomingIPO>
       {/* TODO: create this to real */}
       <Careers></Careers>
@@ -405,6 +407,8 @@ const IPO = () => {
       <ContactUs></ContactUs>
       {/* TODO: Create this to Real INFO */}
       <AboutUs></AboutUs>
+      {/* TODO:  Disclaimer section */}
+      <Disclaimer></Disclaimer>
     </div>
   );
 };
