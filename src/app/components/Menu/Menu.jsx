@@ -8,7 +8,7 @@ import { useRouter } from 'next/navigation';
 const Menu = () => {
 
     const router = useRouter();
- 
+
     return (
         <div className="w-full overflow-y-scroll h-full">
 
@@ -21,7 +21,7 @@ const Menu = () => {
 
                 {/* Main IPO */}
                 <li
-                onClick={() => router.push("#mainipos")}
+                    onClick={() => router.push("#mainipos")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
                 ><Link href="#mainipos">Main IPO</Link></li>
@@ -32,17 +32,17 @@ const Menu = () => {
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
                 ><Link href="#smeipo">SME IPO</Link></li>
-             
+
 
                 {/* IPO Allotment */}
-               <li
+                <li
                     onClick={() => router.push("#ipo-allotment")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
                 ><Link href="#ipo-allotment">IPO Allotment</Link></li>
 
                 {/* IPO Listing */}
-                <li onClick={()=>router.push("#ipo-listing")}
+                <li onClick={() => router.push("#ipo-listing")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
                 ><Link href="#ipo-listing">IPO Listing</Link></li>
@@ -50,7 +50,7 @@ const Menu = () => {
                 {/* Experts Review */}
                 {/* Experts Review */}
                 <li
-                onClick={() => router.push("#experts-review")}
+                    onClick={() => router.push("#experts-review")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
                 ><Link href="#experts-review">Experts Review</Link></li>
@@ -58,7 +58,7 @@ const Menu = () => {
 
                 {/* Upcoming IPO */}
                 <li
-                onClick={() => router.push("#upcoming-ipos")}
+                    onClick={() => router.push("#upcoming-ipos")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className="  ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
                 ><Link href="#upcoming-ipos">Upcoming IPO
@@ -80,7 +80,7 @@ const Menu = () => {
 
                 {/* About us */}
                 <li
-                onClick={() => router.push("#about-us")}
+                    onClick={() => router.push("#about-us")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className="  ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
                 ><Link href="#about-us">About us
@@ -89,6 +89,7 @@ const Menu = () => {
 
                 {/* Disclaimer */}
                 <li
+                    onClick={() => router.push("#disclaimer")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className="  ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
                 ><Link href="/">Disclaimer
