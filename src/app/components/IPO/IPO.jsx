@@ -14,6 +14,7 @@ import UpcomingIPO from '../UpcomingIPO/UpcomingIPO';
 import ExpertsReview from '../ExpertsReview/ExpertsReview';
 import AboutUs from '../AboutUs/AboutUs';
 import ContactUs from '../ContactUs/ContactUs';
+import Careers from '../Careers/Careers';
 
 
 
@@ -398,6 +399,8 @@ const IPO = () => {
       <ExpertsReview></ExpertsReview>
        {/* TODO: The upcoming ipo is dynamic */}
       <UpcomingIPO></UpcomingIPO>
+      {/* TODO: create this to real */}
+      <Careers></Careers>
       {/* TODO: Create This To Real */}
       <ContactUs></ContactUs>
       {/* TODO: Create this to Real INFO */}

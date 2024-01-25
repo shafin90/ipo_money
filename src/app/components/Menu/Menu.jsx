@@ -66,9 +66,10 @@ const Menu = () => {
 
                 {/* Careers */}
                 <li
+                onClick={() => router.push("#careers")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
-                ><Link href="/">Careers</Link></li>
+                ><Link href="#careers">Careers</Link></li>
 
 
                 {/* Contact us */}
