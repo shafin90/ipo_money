@@ -1,9 +1,10 @@
 
 const Careers = () => {
     return (
-        <div id="careers">
+        <div id="careers" className="mt-10">
+               <h1 className='text-center font-extrabold text-5xl text-slate-600 mb-16'>Careers</h1>
                <div  className='w-11/12 mx-auto mt-28 bg-gray-50 hover:bg-gray-100 py-5'>
-             <h1 className='text-center font-extrabold text-5xl text-slate-600 mb-16'>Careers</h1>
+          
          
             <div className="hero  transition-all text-slate-600 hover:ps-10 rounded">
   <div className="hero-content flex-col lg:flex-row-reverse gap-x-28">
