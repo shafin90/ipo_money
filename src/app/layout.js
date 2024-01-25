@@ -1,7 +1,6 @@
 import { Inter } from 'next/font/google'
 import './globals.css'
 import Footer from './components/Footer/Footer'
-import AnimatedCursor from 'react-animated-cursor'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,11 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         {/* <CustomNavbar></CustomNavbar> */}
-        <AnimatedCursor
-          color='0,135,248'
-          innerSize={8}
-          outerSize={32}
-        />
+  
         {children}
         <Footer></Footer>
       </body>
