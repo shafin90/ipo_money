@@ -73,9 +73,10 @@ const Menu = () => {
 
                 {/* Contact us */}
                 <li
+                onClick={() => router.push("#contact-us")}
                     style={{ borderBottom: "0.5px solid #CFCFCF" }}
                     className=" ps-5 py-4 cursor-pointer transition-all text-lg hover:bg-blue-50 hover:ps-9"
-                ><Link href="/">Contact us</Link></li>
+                ><Link href="#contact-us">Contact us</Link></li>
 
 
                 {/* About us */}

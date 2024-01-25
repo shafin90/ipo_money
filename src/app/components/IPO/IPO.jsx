@@ -13,7 +13,11 @@ import IPOAllotment from '../IPOAllotment/IPOAllotment';
 import UpcomingIPO from '../UpcomingIPO/UpcomingIPO';
 import ExpertsReview from '../ExpertsReview/ExpertsReview';
 import AboutUs from '../AboutUs/AboutUs';
+<<<<<<< HEAD
 import Disclaimer from '../Disclaimer/Disclaimer';
+=======
+import ContactUs from '../ContactUs/ContactUs';
+>>>>>>> ffaa9139ce636f99b7409247a357ef704c46bcde
 
 
 
@@ -398,6 +402,8 @@ const IPO = () => {
       <ExpertsReview></ExpertsReview>
       {/* TODO: The upcoming ipo is dynamic */}
       <UpcomingIPO></UpcomingIPO>
+      {/* TODO: Create This To Real */}
+      <ContactUs></ContactUs>
       {/* TODO: Create this to Real INFO */}
       <AboutUs></AboutUs>
       {/* TODO:  Disclaimer section */}
