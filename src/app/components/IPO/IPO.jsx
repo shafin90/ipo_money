@@ -13,15 +13,10 @@ import IPOAllotment from '../IPOAllotment/IPOAllotment';
 import UpcomingIPO from '../UpcomingIPO/UpcomingIPO';
 import ExpertsReview from '../ExpertsReview/ExpertsReview';
 import AboutUs from '../AboutUs/AboutUs';
-<<<<<<< HEAD
 import Disclaimer from '../Disclaimer/Disclaimer';
-=======
 import ContactUs from '../ContactUs/ContactUs';
-<<<<<<< HEAD
->>>>>>> ffaa9139ce636f99b7409247a357ef704c46bcde
-=======
 import Careers from '../Careers/Careers';
->>>>>>> ddbcd4a23d5ddd48969a27bce521033958903a45
+
 
 
 
