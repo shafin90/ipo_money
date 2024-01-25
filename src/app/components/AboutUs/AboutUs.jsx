@@ -46,7 +46,7 @@ This website serves as a comprehensive resource, providing intricate details on 
           aria-controls="panel2-content"
           id="panel2-header"
         >
-          <Typography>Why do we use this website?</Typography>
+          <Typography className="text-xl">Why do we use this website?</Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
