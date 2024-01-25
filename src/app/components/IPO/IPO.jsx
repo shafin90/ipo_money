@@ -12,6 +12,7 @@ import MainIPO from '../MainIPO/MainIPO';
 import IPOAllotment from '../IPOAllotment/IPOAllotment';
 import UpcomingIPO from '../UpcomingIPO/UpcomingIPO';
 import ExpertsReview from '../ExpertsReview/ExpertsReview';
+import AboutUs from '../AboutUs/AboutUs';
 
 
 
@@ -396,6 +397,8 @@ const IPO = () => {
       <ExpertsReview></ExpertsReview>
        {/* TODO: The upcoming ipo is dynamic */}
       <UpcomingIPO></UpcomingIPO>
+      {/* TODO: Create this to Real INFO */}
+      <AboutUs></AboutUs>
     </div>
   );
 };
