@@ -6,10 +6,10 @@ const Careers = () => {
                <div  className='w-11/12 mx-auto mt-28 bg-gray-50 hover:bg-gray-100 py-5'>
           
          
-            <div className="hero  transition-all text-slate-600 hover:ps-10 rounded">
+            <div className="hero   text-slate-600 rounded">
   <div className="hero-content flex-col lg:flex-row-reverse gap-x-28">
     <div className=" lg:text-left">
-    <div className="card shrink-0 w-full max-w-sm  bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10">
+    <div className="card shrink-0 w-full max-w-sm  bg-gray-50 hover:bg-gray-100  text-slate-600">
       <form className="card-body">
       <div className="form-control">
           <label className="label">
@@ -40,7 +40,7 @@ const Careers = () => {
       </form>
     </div>
     </div>
-    <div className="card shrink-0 w-full max-w-sm  bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10">
+    <div className="card shrink-0 w-full max-w-sm  bg-gray-50 hover:bg-gray-100  text-slate-600">
       <form className="card-body">
         <div className="form-control">
           <label className="label">
