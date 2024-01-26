@@ -2,13 +2,13 @@
 const Careers = () => {
   return (
 
-    <div id="careers" className='w-11/12 mx-auto mb-96 '>
+    <div id="careers" className='w-11/12 mx-auto mb-96'>
       <h1 className='text-center font-extrabold text-5xl text-slate-600 mb-16'>Careers</h1>
 
-      <div className="hero bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 rounded-2xl border border-dashed py-24">
-        <div className="hero-content flex-col lg:flex-row-reverse ">
-         
-          <div className="card w-full max-w-sm shadow-2xl bg-gray-50 transition-all text-slate-600">
+      <div className="hero bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 rounded-2xl py-20">
+        <div className="hero-content flex-col lg:flex-row-reverse">
+
+          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-gray-50 transition-all text-slate-600">
             <form className="card-body">
               <div className="form-control">
                 <label className="label">
