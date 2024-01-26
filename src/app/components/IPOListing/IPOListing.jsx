@@ -41,7 +41,7 @@ const IPOListing = ({ data }) => {
 
 
     return (
-        <div id="ipo-listing" className="w-11/12 mx-auto mt-72">
+        <div id="ipo-listing" className="w-11/12 mx-auto mb-96">
 
             {/* Question and answer part=======================1 */}
 
@@ -121,7 +121,7 @@ const IPOListing = ({ data }) => {
             </dialog>
 
 
-            <h1 className="text-center font-extrabold text-5xl text-slate-700 mb-14">
+            <h1 className="text-center font-extrabold text-5xl text-slate-600 mb-14">
                 IPO Listing
             </h1>
 

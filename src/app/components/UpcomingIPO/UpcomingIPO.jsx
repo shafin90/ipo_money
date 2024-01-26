@@ -1,14 +1,14 @@
 const UpcomingIPO = () => {
   return (
     //now just static TODO: make this after dynamic
-    <div id="upcoming-ipos" className="w-11/12 mx-auto mt-28 ">
-      <h1 className="text-center font-extrabold text-5xl text-slate-700 mb-14">
+    <div id="upcoming-ipos" className="w-11/12 mx-auto mb-96">
+      <h1 className="text-center font-extrabold text-5xl text-slate-600 mb-14">
         Upcoming IPO
       </h1>
       {/* this view for lg and md device */}
 
-      <div className="lg:flex md:flex hidden">
-        <table className="w-full  mt-10 border">
+      <div className="lg:flex md:flex hidden ">
+        <table className="w-full  mt-10 border hover:shadow-2xl">
           <thead className=" bg-blue-50">
             <tr>
               <th className="text-start p-7 text-xl text-slate-600">

@@ -57,8 +57,8 @@ const SMEIPO = ({ data }) => {
         .sort(sortDataByPrice);
 
     return (
-        <div id='smeipo' className='w-11/12 mx-auto mt-28 '>
-            <h1 className='text-center font-extrabold text-5xl text-slate-700 mb-14'>SME IPO</h1>
+        <div id='smeipo' className='w-11/12 mx-auto mb-96 '>
+            <h1 className='text-center font-extrabold text-5xl text-slate-600 mb-14'>SME IPO</h1>
 
             <div className=' mb-3'>
                 <label className=' font-semibold text-slate-700'>

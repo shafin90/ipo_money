@@ -1,8 +1,8 @@
 const IPOAllotment = () => {
   return (
     // TODO: create this to dynamically
-    <div id="ipo-allotment" className="w-11/12 mx-auto mt-28 ">
-      <h1 className="text-center font-extrabold text-5xl text-slate-700 mb-14">
+    <div id="ipo-allotment" className="w-11/12 mx-auto mb-96 ">
+      <h1 className="text-center font-extrabold text-5xl text-slate-600 mb-14">
       IPO Allotment 
       </h1>
       {/* this view for lg and md device */}
@@ -24,14 +24,14 @@ const IPOAllotment = () => {
                 Issue Price (Rs)
               </th>
               <th className="text-start p-7 text-xl text-slate-600">
-                AllotmentAllotment
+                Allotment
               </th>
             </tr>
           </thead>
 
           <tbody>
             <tr>
-              <td className="px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10">
+              <td className="px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600">
                 Baweja Studios Limited
               </td>
               <td className="px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600">
@@ -48,7 +48,7 @@ const IPOAllotment = () => {
               </td>
             </tr>
             <tr>
-              <td className="px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10">
+              <td className="px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600">
               Mayank Cattle Food Limited
               </td>
               <td className="px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600">
@@ -65,7 +65,7 @@ const IPOAllotment = () => {
               </td>
             </tr>
             <tr>
-              <td className="px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10">
+              <td className="px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600">
               Fonebox Retail Limited
               </td>
               <td className="px-7 py-4 border bg-gray-50 hover:bg-gray-100 transition-all text-slate-600">
