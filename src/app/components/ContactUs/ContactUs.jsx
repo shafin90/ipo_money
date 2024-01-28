@@ -14,19 +14,19 @@ const ContactUs = () => {
     <div id="contact-us" className='w-11/12 mx-auto mb-96'>
       <h1 className='text-center font-extrabold text-5xl text-slate-600 mb-16'>Contact US</h1>
 
-      <div className="hero bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10 rounded">
+      <div className="hero bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 rounded-xl py-16">
         <div className="hero-content flex-col lg:flex-row-reverse gap-x-36">
           <div className="text-center lg:text-left">
 
             <h1 className="text-xl font-bold flex items-center gap-x-2"><FaMailBulk></FaMailBulk> <span>Info@ipomoney.in</span></h1>
             <ul className=' flex justify-between items-center w-52 transition-all mt-5'>
-              <li><Link href=""><FaInstagram className=' text-2xl cursor-pointer transition-all hover:text-3xl' /></Link></li>
-              <li><Link href=""><BsTwitterX className=' text-2xl cursor-pointer transition-all hover:text-3xl' /></Link></li>
-              <li><Link href=""><CiYoutube className=' text-2xl cursor-pointer transition-all hover:text-3xl' /></Link></li>
-              <li><Link href=""><FaFacebookF className=' text-2xl cursor-pointer transition-all hover:text-3xl' /></Link></li>
+              <li><Link href=""><FaInstagram className=' text-2xl cursor-pointer transition-all' /></Link></li>
+              <li><Link href=""><BsTwitterX className=' text-2xl cursor-pointer transition-all'/></Link></li>
+              <li><Link href=""><CiYoutube className=' text-2xl cursor-pointer transition-all'/></Link></li>
+              <li><Link href=""><FaFacebookF className=' text-2xl cursor-pointer transition-all'/></Link></li>
             </ul>
           </div>
-          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-gray-50 hover:bg-gray-100 transition-all text-slate-600 hover:ps-10">
+          <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-gray-50 transition-all text-slate-600">
             <form className="card-body">
               <div className="form-control">
                 <label className="label">

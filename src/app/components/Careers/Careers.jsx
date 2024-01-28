@@ -18,7 +18,7 @@ const Careers = () => {
         <label htmlFor="fileInput" className="cursor-pointer border-4 border-dashed p-10 rounded-2xl">
           <LuUploadCloud className=" text-6xl transition-all text-gray-600" />
         </label>
-        
+
         <input
           type="file"
           id="fileInput"
@@ -26,9 +26,9 @@ const Careers = () => {
           className="hidden"
           onChange={handleFileUpload}
         />
-      <h1 className=" text-center absolute bottom-10 text-xl font-semibold">Upload your Resume/CV </h1>
+        <h1 className=" text-center absolute bottom-10 text-xl font-semibold">Upload your Resume/CV </h1>
       </div>
-      
+
     </div>
   );
 };

@@ -14,9 +14,9 @@ const CustomNavbar = () => {
             <div className=' w-11/12 flex justify-between items-center'>
                 {/* meun================= */}
                 <ul className=' flex justify-between items-center '>
-                    <li><Link href="" className=' text-blue-900 text-lg font-semibold cursor-pointer hover:text-green-900 transition-all px-7 py-4 hover:shadow-2xl rounded-3xl'>IPO GMP</Link></li>
-                    <li><Link href="" className=' text-blue-900 text-lg font-semibold cursor-pointer hover:text-green-900 transition-all px-7 py-4 hover:shadow-2xl rounded-3xl'>IPO Subccription</Link></li>
-                    <li><Link href="" className=' text-blue-900 text-lg font-semibold cursor-pointer hover:text-green-900 transition-all px-7 py-4 hover:shadow-2xl rounded-3xl'>Latest IPO Updates</Link></li>
+                    <li><Link href="" className=' text-blue-900 text-lg font-semibold cursor-pointer hover:text-green-900 transition-all px-7 py-4 hover:shadow-2xl rounded-2xl'>IPO GMP</Link></li>
+                    <li><Link href="" className=' text-blue-900 text-lg font-semibold cursor-pointer hover:text-green-900 transition-all px-7 py-4 hover:shadow-2xl rounded-2xl'>IPO Subccription</Link></li>
+                    <li><Link href="" className=' text-blue-900 text-lg font-semibold cursor-pointer hover:text-green-900 transition-all px-7 py-4 hover:shadow-2xl rounded-2xl'>Latest IPO Updates</Link></li>
                 </ul>
 
                 {/* Icons================= */}

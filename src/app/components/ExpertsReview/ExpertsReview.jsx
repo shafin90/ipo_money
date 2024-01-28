@@ -1,6 +1,7 @@
 
 
 const ExpertsReview = () => {
+  
   return (
     <div id="experts-review" className=" mb-96">
       <div>
@@ -24,13 +25,13 @@ const ExpertsReview = () => {
                 <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                   <a
                     href="#slide3"
-                    className="btn btn-circle bg-blue-100 hover:bg-blue-200 transition-all cursor-pointer"
+                    className=" text-gray-600 btn btn-circle bg-blue-100 hover:bg-blue-200 transition-all cursor-pointer"
                   >
                     ❮
                   </a>
                   <a
                     href="#slide2"
-                    className="btn btn-circle bg-blue-100 hover:bg-blue-200 transition-all cursor-pointer"
+                    className=" text-gray-600 btn btn-circle bg-blue-100 hover:bg-blue-200 transition-all cursor-pointer"
                   >
                     ❯
                   </a>
