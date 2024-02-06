@@ -34,7 +34,7 @@ const Heading = ({ heading }) => {
 
     return (
         <div>
-            <h1 ref={title} className='mt-96 text-4xl sm:text-7xl font-bold text-center mb-10'>
+            <h1 ref={title} className='mt-96 text-4xl sm:text-7xl font-bold text-center'>
                 {heading}
             </h1>
         </div>

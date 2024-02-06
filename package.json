@@ -14,7 +14,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.15.6",
     "framer-motion": "^10.18.0",
-    "gsap": "^3.12.4",
+    "gsap": "^3.12.5",
     "next": "14.0.4",
     "react": "^18",
     "react-awesome-reveal": "^4.2.7",

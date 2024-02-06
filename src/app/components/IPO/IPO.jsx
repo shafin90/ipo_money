@@ -1,4 +1,5 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useRef } from 'react';
 import Card from '../Card/Card';
 import OngoinIPOSubscriptionTable from '../OngoinIPOSubscriptionTable/OngoinIPOSubscriptionTable';
 import Heading from '../Heading/Heading';
@@ -16,6 +17,7 @@ import AboutUs from '../AboutUs/AboutUs';
 import Disclaimer from '../Disclaimer/Disclaimer';
 import ContactUs from '../ContactUs/ContactUs';
 import Careers from '../Careers/Careers';
+import gsap from 'gsap';
 
 
 
@@ -316,6 +318,100 @@ const IPO = () => {
 
 
 
+  const one = useRef(null);
+  const two = useRef(null);
+  const three = useRef(null);
+  const four = useRef(null);
+
+  useEffect(() => {
+
+    const pinOne = gsap.fromTo(one.current,
+      {
+        translateX: "0vw"
+      },
+      {
+        scrollTrigger: {
+          trigger: one.current,
+          toggleActions: "restart pause resume pause",
+          start: "top 40%",
+          end: "+=900",
+          scrub: 1,
+          pin: true,
+        },
+        translateX: "-40vw",
+        rotate: "20deg"
+
+      }
+    )
+
+    const pinTwo = gsap.fromTo(two.current,
+      {
+        translateX: "0vw"
+      },
+      {
+        scrollTrigger: {
+          trigger: two.current,
+          toggleActions: "restart pause resume pause",
+          start: "top 40%",
+          end: "+=900",
+          scrub: 1,
+          pin: true,
+        },
+        translateX: "50vw",
+        rotate: "-20deg"
+      }
+    )
+
+
+    const pinThree = gsap.fromTo(three.current,
+      {
+        scale: 0
+      },
+      {
+        scrollTrigger: {
+          trigger: three.current,
+          toggleActions: "restart pause resume pause",
+          start: "top center",
+          end: "600 top",
+          scrub: 1,
+          pin: true
+
+        },
+        scale: 1,
+
+      }
+    )
+
+    const pinFour = gsap.fromTo(four.current,
+      {
+        scale: 0
+      },
+      {
+        scrollTrigger: {
+          trigger: four.current,
+          toggleActions: "restart pause resume pause",
+          start: "top bottom",
+          end: "600 top",
+          scrub: 1,
+          pin: true
+        },
+        scale: 1,
+
+      }
+    )
+
+    return () => {
+      pinTwo.kill()
+      pinOne.kill()
+      pinThree.kill()
+      pinFour.kill()
+
+    }
+
+  }, [])
+
+
+
   return (
     <div className='w-full my-32'>
 
@@ -329,11 +425,16 @@ const IPO = () => {
       </div>
 
       {/* Card section for large screen============== */}
-      <div className=' hidden sm:grid grid-rows-2 grid-cols-2 gap-10 w-11/12 mx-auto'>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
-        <Card></Card>
+      <div className=' relative w-11/12 mx-auto'>
+        <div className=' z-10 hidden sm:grid grid-rows-1 grid-cols-2 gap-10  w-full'>
+          <div ref={one} > <Card></Card> </div>
+          <div ref={two} > <Card></Card> </div>
+        </div>
+
+        <div className=' top-0 z-0 absolute hidden sm:grid grid-rows-1 grid-cols-2 gap-10 w-full'>
+          <div ref={three} > <Card></Card> </div>
+          <div ref={four} > <Card></Card> </div>
+        </div>
       </div>
 
       {/*b. For small screen=========================================================== */}
